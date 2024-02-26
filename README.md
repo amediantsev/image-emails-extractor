@@ -54,7 +54,3 @@ This script uses the following open-source software:
 - [Tesseract-OCR](https://github.com/tesseract-ocr/tesseract) for optical character recognition.
 - [Pytesseract](https://pypi.org/project/pytesseract/) as a Python wrapper for Tesseract-OCR.
 - [Pillow](https://python-pillow.org/) for image processing.
-
----
-
-This README template provides a comprehensive guide for users to get started with the email extractor script, including environment setup and usage instructions. Feel free to modify it according to your project's specific needs or additional functionalities you might add to the script.
