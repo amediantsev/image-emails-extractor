@@ -44,10 +44,6 @@ python email_extractor.py --input /path/to/image.png --output /path/to/output.tx
 - `--input`: Specifies the path to the input image file.
 - `--output`: Specifies the path to the text file where extracted email addresses will be saved.
 
-## License
-
-This script is released under the MIT License.
-
 ## Acknowledgments
 
 This script uses the following open-source software:
