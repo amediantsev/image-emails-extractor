@@ -1,13 +1,17 @@
 import os
+from pathlib import Path
+
+import pytest
 
 from email_extractor import extract_emails, save_extracted_emails
 
 
-def test_extract_multiple_emails(get_test_abspath):
+@pytest.mark.parametrize("image_filename", os.listdir(Path(__file__).parent / "images"))
+def test_extract_multiple_emails(get_test_abspath, image_filename):
     """
     Test that emails are correctly extracted from an image.
     """
-    input_image_path = get_test_abspath("tests/images/multiple_emails.webp")
+    input_image_path = get_test_abspath(f"tests/images/{image_filename}")
     expected_emails = [
         "c.nick@ahrefs.com",
         "churick.n@ahrefs.com",
